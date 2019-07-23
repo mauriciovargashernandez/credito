@@ -1,0 +1,58 @@
+<div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+        <div class="content-wrapper d-flex align-items-center auth auth-bg-1 theme-one">
+            <div class="row w-100">
+                <div class="col-lg-4 mx-auto">
+                    <div class="auto-form-wrapper">
+                        <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+                            <div class="form-group">
+                                <label class="label">Usuario</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Usuario" ngModel name="usuario" required>
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="label">Contraseña</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" placeholder="*********" ngModel name="password" required>
+                                    <span class="input-group-text">
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary submit-btn btn-block" [disabled]="f.invalid">Login</button>
+                                <!-- <button class="btn btn-primary submit-btn btn-block" disabled="true">Login</button> -->
+
+                            </div>
+
+                            <div class="text-block text-center my-3">
+                                <span class="text-small font-weight-semibold">No eres miembro ?</span>
+                                <br>
+                                <a href="register.html" class="text-black text-small">Solicitar Registro</a>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="auth-footer">
+                        <li>
+                            <a href="#">Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms</a>
+                        </li>
+                    </ul>
+                    <p class="footer-text text-center">copyright © 2018 Bootstrapdash. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
